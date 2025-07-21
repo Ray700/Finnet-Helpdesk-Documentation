@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finnet Helpdesk - User Guide</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #0a2351; /* Regal Blue */
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+    header img {
+      height: 50px;
+      margin-right: 20px;
+    }
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #0a2351; /* Regal Blue */
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 8px;
+    }
+    img.screenshot {
+      max-width: 100%;
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+    .note {
+      background: #e6f9f0; /* Light Green */
+      border-left: 4px solid #1d8348; /* Green */
+      padding: 10px 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.png" alt="Finnet Logo">
+  <h1>Finnet Helpdesk – User Documentation</h1>
+</header>
+
+<main>
+  <h2>1. Introduction</h2>
+  <p>Welcome to the Finnet Helpdesk User Guide. This guide provides step-by-step instructions on how to use the Helpdesk system powered by Odoo 17 to manage customer support tickets effectively.</p>
+
+  <h2>2. Accessing Helpdesk</h2>
+  <ul>
+    <li>Login to your Odoo system using your assigned credentials.</li>
+    <li>Navigate to the <strong>Helpdesk</strong> module from the main dashboard.</li>
+    <li>You will be directed to the Helpdesk overview dashboard.</li>
+  </ul>
+  <img src="assets/screenshot1.png" alt="Helpdesk Dashboard" class="screenshot"/>
+
+  <h2>3. Creating and Managing Tickets</h2>
+  <ul>
+    <li>Click on <strong>Create</strong> to open a new support ticket.</li>
+    <li>Fill in the necessary details such as Subject, Assigned Team, and Description.</li>
+    <li>Set Priority (Low, Medium, High, Urgent) and add tags if necessary.</li>
+    <li>Click <strong>Save</strong> to register the ticket.</li>
+  </ul>
+  <img src="assets/screenshot2.png" alt="Create Ticket" class="screenshot"/>
+
+  <h2>4. Ticket Lifecycle</h2>
+  <p>Tickets follow a status flow: <strong>New → In Progress → Solved → Closed</strong>.</p>
+  <ul>
+    <li>Use Kanban or List view to manage ticket progress.</li>
+    <li>Drag and drop tickets across stages.</li>
+    <li>Add internal notes or customer replies directly from the ticket form.</li>
+  </ul>
+
+  <h2>5. SLA Policies</h2>
+  <p>Each Helpdesk Team can have Service Level Agreements (SLAs) defined to track deadlines.</p>
+  <ul>
+    <li>SLAs trigger deadlines for ticket response or resolution.</li>
+    <li>Managers can configure SLA policies under <em>Configuration → SLA Policies</em>.</li>
+  </ul>
+
+  <h2>6. Help Center Integration</h2>
+  <p>The Helpdesk is integrated with:</p>
+  <ul>
+    <li><strong>Knowledge Base</strong> – Share reusable articles with customers and agents.</li>
+    <li><strong>Live Chat</strong> – Respond to live messages instantly.</li>
+    <li><strong>eLearning</strong> – Attach relevant training materials to tickets.</li>
+  </ul>
+
+  <h2>7. Reports & Analysis</h2>
+  <ul>
+    <li>Go to <strong>Reporting → Tickets Analysis</strong> to view ticket performance.</li>
+    <li>Metrics include ticket volume, average response time, resolution time, SLA status, and customer rating.</li>
+  </ul>
+  <img src="assets/screenshot3.png" alt="Helpdesk Reporting" class="screenshot"/>
+
+  <div class="note">
+    📌 <strong>Tip:</strong> Use filters and groupings to segment reports by teams, priorities, tags, and status.
+  </div>
+
+  <h2>8. Notifications and Email Integration</h2>
+  <ul>
+    <li>Tickets created via email are automatically assigned based on the team alias.</li>
+    <li>Users receive email notifications on updates, assignments, and status changes.</li>
+  </ul>
+
+  <h2>9. Automation & Templates</h2>
+  <ul>
+    <li>Configure automated actions for ticket routing, escalations, or stage updates.</li>
+    <li>Create canned responses and email templates to improve response time.</li>
+  </ul>
+
+  <h2>10. Support</h2>
+  <p>If you need further assistance, contact the system administrator or submit a support ticket via the Helpdesk portal.</p>
+</main>
+
+<footer>
+  &copy; 2025 Finnet Trust | All rights reserved.
+</footer>
+
+</body>
+</html>
